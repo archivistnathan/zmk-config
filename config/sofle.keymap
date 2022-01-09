@@ -8,8 +8,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-&mt {
-    tapping-term-ms = <400>;
+&th_tap {
+    tapping-term-ms = <250>;
 };
 
 / {
@@ -24,10 +24,10 @@
 // | SHIFT |  Z  |  X  |  C   |  D   |  V   |  MUTE  |   | PLAY |  K   |  H    |  ,    |  .   |   /   | APP |
 //               | CTRL| ALT  | LOWER | DEL|  BACKSPACE |  | SPACE | ENTER | RAISE  | ALT   | CMD  |
             bindings = <
-&kp ESC &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                      &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &mt LS(MINUS) MINUS
-&kp TAB   &mt LS(Q) Q  &mt LS(W) W    &mt LS(F) F    &mt LS(P) P     &mt LS(B) B                       &mt LS(J) J  &mt LS(L) L     &mt LS(U) U     &mt LS(Y) Y    &mt LS(SEMI) SEMI    &mt LS(SQT) SQT
-&kp LCMD   &mt LS(A) A  &mt LS(R) R    &mt LS(S) S    &mt LS(T) T     &mt LS(G) G                       &mt LS(M) M  &mt LS(N) N     &mt LS(E) E     &mt LS(I) I    &mt LS(O) O &kp RSHFT
-&kp LSHFT &mt LS(Z) Z  &mt LS(X) X    &mt LS(C) C    &mt LS(D) D     &mt LS(V) V  &kp C_MUTE &kp C_PP     &mt LS(K) K  &mt LS(H) H     &mt LS(COMMA) COMMA &mt LS(DOT) DOT  &mt LS(SLASH) SLASH &kp K_APP
+&kp ESC &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                      &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &th_tap LS(MINUS) MINUS
+&kp TAB   &th_tap LS(Q) Q  &th_tap LS(W) W    &th_tap LS(F) F    &th_tap LS(P) P     &th_tap LS(B) B                       &th_tap LS(J) J  &th_tap LS(L) L     &th_tap LS(U) U     &th_tap LS(Y) Y    &th_tap LS(SEMI) SEMI    &th_tap LS(SQT) SQT
+&kp LCMD   &th_tap LS(A) A  &th_tap LS(R) R    &th_tap LS(S) S    &th_tap LS(T) T     &th_tap LS(G) G                       &th_tap LS(M) M  &th_tap LS(N) N     &th_tap LS(E) E     &th_tap LS(I) I    &th_tap LS(O) O &kp RSHFT
+&kp LSHFT &th_tap LS(Z) Z  &th_tap LS(X) X    &th_tap LS(C) C    &th_tap LS(D) D     &th_tap LS(V) V  &kp C_MUTE &kp C_PP     &th_tap LS(K) K  &th_tap LS(H) H     &th_tap LS(COMMA) COMMA &th_tap LS(DOT) DOT  &th_tap LS(SLASH) SLASH &kp K_APP
                  &kp LCTRL &kp LALT &mo 1 &kp DEL &kp BSPC    &kp SPACE &kp RET &mo 2  &kp RALT  &kp RCMD
             >;
 
