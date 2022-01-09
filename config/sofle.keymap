@@ -20,10 +20,10 @@
 // | SHIFT |  Z  |  X  |  C   |  D   |  V   |  MUTE  |   | PLAY |  K   |  H    |  ,    |  .   |   /   | APP |
 //               | CTRL| ALT  | LOWER | DEL|  BACKSPACE |  | SPACE | ENTER | RAISE  | ALT   | CMD  |
             bindings = <
-&kp ESC &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                      &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &kp MINUS
-&kp TAB   &kp Q  &kp W    &kp F    &kp P     &kp B                       &kp J  &kp L     &kp U     &kp Y    &kp SEMI    &kp SQT
-&kp LCMD   &mt LS(A) A  &kp R    &kp S    &kp T     &kp G                       &kp M  &kp N     &kp E     &kp I    &kp O &kp RSHFT
-&kp LSHFT &kp Z  &kp X    &kp C    &kp D     &kp V  &kp C_MUTE &kp C_PP     &kp K  &kp H     &kp COMMA &kp DOT  &kp FSLH &kp K_APP
+&kp ESC &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                      &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &mt LS(MINUS) MINUS
+&kp TAB   &mt LS(Q) Q  &mt LS(W) W    &mt LS(F) F    &mt LS(P) P     &mt LS(B) B                       &mt LS(J) J  &mt LS(L) L     &mt LS(U) U     &mt LS(Y) Y    &mt LS(SEMI) SEMI    &mt LS(SQT) SQT
+&kp LCMD   &mt LS(A) A  &mt LS(R) R    &mt LS(S) S    &mt LS(T) T     &mt LS(G) G                       &mt LS(M) M  &mt LS(N) N     &mt LS(E) E     &mt LS(I) I    &mt LS(O) O &kp RSHFT
+&kp LSHFT &mt LS(Z) Z  &mt LS(X) X    &mt LS(C) C    &mt LS(D) D     &mt LS(V) V  &kp C_MUTE &kp C_PP     &mt LS(K) K  &mt LS(H) H     &mt LS(COMMA) COMMA &mt LS(DOT) DOT  &mt LS(FLSH) FSLH &kp K_APP
                  &kp LCTRL &kp LALT &mo 1 &kp DEL &kp BSPC    &kp SPACE &kp RET &mo 2  &kp RALT  &kp RCMD
             >;
 
